@@ -22,3 +22,7 @@
 -------------
 - **cmd**: `openssl s_client -connect google.com:443 2>/dev/null`
 - **usage**: Check the TLS connection to google.com
+-------------
+- **cmd**: `scp -o ProxyJump=<jump_user>@<jump_host> <local_file> <dest_user>@<dest_host>:<dest_path>`
+- **usage**: Use SCP with an SSH jump host (ProxyJump) to securely copy a file through an intermediate server.
+ 
